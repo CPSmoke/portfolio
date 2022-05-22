@@ -97,6 +97,10 @@
         &__form {
             grid-template: 45px 190px 45px/repeat(2,185px);
         }
+        &__triggers {
+            grid-template-columns: 3fr 2fr;
+            column-gap: 10px;
+        }
     }
 }
 
@@ -177,7 +181,7 @@
     }
     .title {
         &_fz48 {
-            font-size: 26px;
+            font-size: 27px;
         }
         &_fz36 {
             font-size: 24px;
@@ -213,10 +217,12 @@
         &__items {
             grid-template-columns: repeat(1,300px);
             margin-top: 20px;
+            justify-content: center;
         }
         &__raitings {
             grid-template-columns: repeat(1,300px);
             margin-top: 40px;
+            justify-content: center;
             &-item {
                 row-gap: 33px;
             }
@@ -250,7 +256,8 @@
     .contacts {
         padding-bottom: 50px;
         &__form {
-            grid-template: 45px 190px 120px/repeat(2,145px);
+            grid-template: 45px 190px 120px/repeat(2, 1fr);
+            column-gap: 20px;
         }
         &__photo {
             display: none;
